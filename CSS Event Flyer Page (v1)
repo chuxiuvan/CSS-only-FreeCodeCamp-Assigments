@@ -1,0 +1,94 @@
+(This is version one where it meets the requirements for the assignment, but does not have boxes next to each other)
+**Start of HTML**
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Slinky Event Flyer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="https://raw.githubusercontent.com/chuxiuvan/Media/refs/heads/main/513556467_1272728677585982_6509040298723189302_n%20-%20Copy.jpg" alt="Header image of my cat slinky" class="slinky-image">
+    <h1>See My Pet Cat Slinky!</h1>
+    </header>
+<main>
+  <section class="event-details">
+    <h2>Where and When:</h2>
+      <ul>
+        <li>October 5th 1990</li>
+        <li>Generic National Park</li>
+        <li>123 McRoad Road, City, P0STC0DE</li>
+      </ul>
+  </section>
+  <hr>
+  <section class="what-to-bring">
+    <h2>What to bring for Slinky:</h2>
+      <ul>
+        <li>Cat tube treats</li>
+        <li>Feather Teasers</li>
+        <li>All the catnip!</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+**End of HTML**
+
+**start of CSS**
+
+:root /*global application*/ {
+      --primary: goldenrod;
+      --secondary: ;
+      --font-family: Lucida Console, Courier, monospace; /*preferred font family*/
+    }
+
+.slinky-image {
+  max-width:30%;
+  margin:auto;
+  display:block;
+}
+
+h1, h2 {
+  text-decoration:underline;
+  font-size:2rem;
+      }
+
+body {
+  background-color: var(--primary);
+  padding:50px 0px;
+  margin:0 auto;
+  min-height: calc(100vh - 100px);
+  width: 100vw;
+  text-align:center;    
+    }
+
+li {
+  font-family: var(--font-family);
+}
+
+section {
+  background-color: #E4CB42;
+  border: 1rem solid white;
+  padding:20px;
+  width:50%;
+  text-align:center;
+  margin:20px auto;
+  
+}
+
+hr{
+  width:100%;
+  background-color: #B1573A;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+**End of CSS**
