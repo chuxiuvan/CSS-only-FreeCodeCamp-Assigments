@@ -1,0 +1,147 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <h1>Job Application Form</h1>
+        <fieldset class="details">
+        <legend>Contact Information:</legend>    
+        <label for="name" class="name">Full Name:</label>
+        <input type="text" id="name" placeholder="(Required)" aria-required="true">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="(Required)" aria-required="true">
+        </fieldset>
+
+    <fieldset class="position">
+        <legend >What position are you applying for?</legend>
+        <select id="position">
+            <option value="CEO" id="CEO">CEO</option>
+            <option value="COO" id="COO">COO</option>
+            <option value="CFO" id="CFO">CFO</option>
+            <option value="CIO" id="CIO">CIO</option>
+            <option value="Unemployed" id="Unemployed">Unemployed</option>
+        </select>
+    </fieldset>  
+        <fieldset class="radio-group">
+            <legend>What availability are you applying for?</legend>
+            <input type="radio" id="full-time" name="availability" checked>
+            <label for="full-time">Full-time</label>
+
+            <input type="radio" id="part-time" name="availability">    
+            <label for="part-time">Part-time</label>
+        </fieldset>    
+
+        <fieldset class="explain-role">
+            <legend>Why should this role be filled by you?</legend>
+        <textarea id="message">Please explain why you are suited for this role here:</textarea>
+        </fieldset>
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #cec6c6;
+}
+h1 {
+  text-align: center;
+}
+.container {
+    max-width: 90%;
+    margin: 5px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, select, textarea {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;  
+}
+button {
+  border-radius: 16px; 
+  font-weight: bold;
+  height: 40px;
+}
+input:focus, textarea:focus { 
+    outline:none;
+    border-color: yellow;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px #719ECE   
+ }
+ select:focus { 
+    outline: none;
+    border-color: yellow;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px #719ECE 
+ }
+button:hover {
+  background-color: purple;
+  color: white;
+}
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}
+.radio-group input[type="radio"]:checked {
+  border-color: red;
+  background-color: rgb(9, 9, 247);
+  box-shadow: 0 1px  rgb(180, 180, 6);
+  margin-top: 16px;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+}
+.radio-group input[type="radio"] {
+  margin-top: 16px;
+  width: 10%;
+}    
+.radio-group input[type="radio"]:checked + label {
+  color: skyblue;
+}
+.message {
+  padding-top: 16px;
+}
+fieldset {
+  border-radius: 16px;
+  border-color: green;
+  border-width: 1px;
+  }
+input:first-of-type {
+  color: red;
+  font-style: italic;
+}
+input:nth-of-type(2) {
+  color:red;
+  font-style:italic;
+
+}
+
+** end of styles.css **
+
+(omg this was harder than it should have been for some reason T_T)
