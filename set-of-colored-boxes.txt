@@ -1,0 +1,62 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheets" href="styles.css">
+    <title>Colored Boxes</title>
+</head>
+<body>
+    <div class="color-grid">
+        <div class="color-box color1">
+        </div>
+        <div class="color-box color2">
+        </div>
+        <div class="color-box color3">
+        </div>
+        <div class="color-box color4">
+        </div>
+        <div class="color-box color5">
+        </div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-color: #f4f4f4;
+}
+.color-grid {
+  display: flex;
+  gap:30px;
+}
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0;
+  border-radius:10px;
+}
+
+.color1 {
+  background-color: #e8207a;
+}
+.color2 {
+  background-color: rgb(127, 0, 255);
+}
+.color3 {
+  background-color:goldenrod;
+}
+.color4 {
+  background-color: hsl(149deg, 78%, 63%);
+}
+.color5 {
+  background-color:coral;
+}
+
+** end of styles.css **
+
